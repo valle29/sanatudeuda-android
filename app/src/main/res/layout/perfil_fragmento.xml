@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:alpha="0.5"
+            android:layout_weight="2.5">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/login_title"
+        android:orientation="vertical"
+        android:elevation="4sp"
+        android:background="@drawable/rounded_corner"
+        android:id="@+id/primer_seccion">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="65sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorPrimaryText"
+                    android:gravity="center"
+                    android:id="@+id/txt_nombre_cliente"
+                    android:textSize="18sp"
+                    android:text="Antonio Valle Galvez"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_correo_cliente"
+                    android:textColor="@color/colorSecondaryText"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="antonio.valle@coppel.com"
+                    android:layout_marginBottom="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/primer_seccion"
+        android:orientation="vertical"
+        android:elevation="4sp"
+        android:background="@drawable/rounded_corner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/nav_informacion"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/ic_info_outline_white_24dp"
+                    android:tint="@color/colorSecondaryText"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Ver Información"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="16sp"
+                    android:id="@+id/txt_informacion"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/nav_modificar_cuenta"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="20sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/ic_cached_black_24dp"
+                    android:tint="@color/colorSecondaryText"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Modificar Cuenta"
+                    android:textColor="@color/colorPrimaryText"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:textSize="16sp"
+                    android:id="@+id/txt_modificar_cuenta" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/nav_cerrar_sesion"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:paddingTop="20sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp">
+
+                <ImageView
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/ic_power_settings_new_black_24dp"
+                    android:tint="@color/colorSecondaryText"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Cerrar Sesión"
+                    android:textColor="@color/colorPrimaryText"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:textSize="16sp"
+                    android:id="@+id/txt_cerrar_sesion" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:elevation="9dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_title"
+        android:src="@drawable/avatar5"
+        android:id="@+id/img_avatar" />
+
+</RelativeLayout>

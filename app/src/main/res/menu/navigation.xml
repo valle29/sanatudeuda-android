@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_negociacion"
+        android:icon="@drawable/apreton_de_manos"
+        android:title="@string/title_dashboard"/>
+
+    <item
+        android:id="@+id/navigation_abonos"
+        android:icon="@drawable/coin_100"
+        android:title="@string/title_notifications"/>
+
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/usuario_100"
+        android:title="@string/title_profile"/>
+
+</menu>
